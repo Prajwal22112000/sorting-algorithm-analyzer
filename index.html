@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="maincontainer">
+
+    <div id="maintitle">
+        <h1>Sorting Algorithm Visualizer</h1>
+    </div>
+
+    <!-- box to hold the bars/candlesticks -->
+    <div id="barbox"></div>
+
+    <div id="hr1"></div>
+
+    <!-- Slider to increase decrease candlestick density -->
+    <div id="slider">
+        <div>
+            <h1 id="sliderrangecount"></h1>
+            <label for="sliderrange"></label>
+            <input type="range" name="sliderrange" id="sliderrange" min="5" max="100" step="1" value="15">
+        </div>
+        <div>
+            <button onclick="soudnONOFF()" id="soundicon"></button>
+        </div>
+    </div>
+
+    <div id="propertiesbox">
+        <!-- sortingspeed -->
+        <div id="pb1">
+            <select name="speed" id="sortspeed">
+                <option value="5" selected>Super Fast</option>
+                <option value="25" >Fast</option>
+                <option value="50">Normal</option>
+                <option value="100">Slow</option>
+                <option value="500">Super Slow</option>
+            </select>
+        </div>
+
+        <!-- sorting type -->
+        <div id="pb2">
+            <select name="sorttype" id="sorttype" >
+                <option value="bsort">bubble sort</option>
+                <option value="isort">insertion sort</option>
+                <option value="qsort">quick sort</option>
+                <option value="ssort">selection sort</option>
+                <option value="hsort">heap sort</option>
+                <option value="msort" selected>merge sort</option>
+            </select>
+        </div>
+
+        <!-- Randomize The Array -->
+        <div id="pb3">
+            <button id="randomizearray" onclick="randomizeArray()">Randomize Array</button>
+        </div>
+
+        <!-- Sort the Array -->
+        <div id="pb4">
+            <button id="startsort" onclick="sort()">Sort</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

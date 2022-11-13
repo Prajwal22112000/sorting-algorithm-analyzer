@@ -1,0 +1,158 @@
+*{
+    color: #242424;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#maincontainer{
+    background-color: #0a0c18;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#maintitle{
+    background-color: rgb(33, 106, 132);
+    font-size: 100%;
+    text-transform: uppercase;
+    margin:0 auto 1vh;
+    height: auto;
+    width: 100%;
+}
+#maintitle h1 {
+    margin: 1vh auto 1vh;
+    text-align: center;
+}
+
+#barbox {
+    /* background-color: aliceblue; */
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    margin: 0 2.5%;
+}
+
+.bar
+{
+    background-color: rgb(70, 132, 71);    
+    width: 10%;
+    min-width: 0.5%;
+    margin: 0 0.1%;
+    font-size:initial;
+}
+
+#hr1{
+    width: auto;
+    height: 0.5rem;
+    margin: 1rem 0 0;
+    background-color: rgb(85, 26, 26);
+}
+
+#slider {
+    /* background-color: #242424; */
+    display: flex;
+    margin: 3vh auto 7.5vh;
+    align-items: center;
+    min-height: 2vh;
+    width: 100%;
+}
+
+#slider div {
+    width: 50%;
+
+}
+
+#slider h1 {
+    color: aliceblue;
+    margin: 0 auto 2vh;
+}
+
+#slider button {
+    border-radius: 50%;
+    max-width:max-content;
+    padding: 1vh;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#slider img {
+    height: 100%;
+
+}
+
+#sliderrange {
+    height: 2vh;
+    min-width:50% ;
+    margin: auto;
+}
+
+#propertiesbox {
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    margin:  0 auto ;
+    width: 100%;
+}
+
+#pb1, #pb2, #pb3, #pb4 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    max-width: 25%;
+    margin: auto;
+}
+
+select, option, button{
+    height: 8vh;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: rgb(249, 255, 200);
+    font-size: 125%;
+    background-color: rgb(99, 70, 127);
+    text-align: center;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+select:hover, option:hover, button:active{
+    background-color: rgb(68, 16, 117);
+}
+
+/* for mobile devices */
+@media (max-width: 768px) {
+    #maintitle{
+        font-size: 66%;
+    }
+    #propertiesbox {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    }
+    #pb1, #pb2, #pb3, #pb4 {
+        width: 50%;
+        max-width: 50%;
+    }
+    #sliderrange {
+        width: 50%;
+        margin: 0 25%;
+    }
+    select, option, button{
+        text-transform: capitalize;
+        height: 4rem;
+        width: 80%;
+        padding: 0;
+        font-size: 95%;
+    }
+}
