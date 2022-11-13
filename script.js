@@ -113,7 +113,6 @@ async function bubbleSort(){
 // *************************************************************************************
 async function insertionSort(){
     if(arraysorted == false){
-        alert("insertoin sort function called");
         let i = 0, stick;
         while(i < array.length){
             if(interruption){return;}
